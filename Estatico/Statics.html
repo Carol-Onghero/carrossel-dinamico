@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrossel estático</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css" />
+
+  </head>
+  <body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Slider</h1>
+          <h2>
+            The Check list widget allows to create compositions with texts and
+            icons highlighting specific items in the listings.
+          </h2>
+          <div class="owl-business owl-carousel">
+            <div id="add-file">
+              <img src="../images/adicionar.png" alt="#" class="plus img-responsive" />
+            </div>            
+          </div>
+        </div>        
+      </div>
+      
+      <div class="row form">
+        <div class="col-md-6">
+          <div class="selector">
+            <img src="../images/adicionar.png" alt="Plus" />
+            <h3>Click to add a background image</h3>
+          </div>          
+          <div id="photos-contain">
+            <input type="search" id="search-photo" />
+              <div class="photos"></div>
+            <div class="button">
+              <a href="#"> Load more </a>
+            </div>
+            <h4>
+              We recommend using an image that is 1920x520px to cover the entire
+              site, and account for larger screen sizes. Please make sure images
+              are at least 1200px wide and keep roughly the same aspect ratio.
+            </h4>
+          </div>
+        </div>
+        <div class="col-md-6" id="info_photo">
+          <form action="#">
+            <div class="title">
+              <label for="text"> Label </label>
+              <input type="text" />
+            </div>
+            <div class="summary">
+              <label for="description"> Summary description </label>
+              <input type="text" />
+            </div>
+            <div class="link">
+              <label for="Links">Link</label>
+              <select name="cars" id="cars">
+                <option value="" selected disabled>Select an option</option>
+                <option value="r-link">Reduced link</option>
+                <option value="orign-link">Original link</option>
+                <option value="w-link">Without link</option>
+              </select>
+            </div>
+            <div class="new-tab">
+              <label for="check" id="check">
+                <input type="checkbox" name="check" />
+                Open in a new window
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr />
+          <label for="check" class="frst-check">
+            <input type="checkbox" name="check" id="check" />
+            Apply changes to all pages using this widget
+          </label>
+        </div>
+      </div>
+    </div>
+    <script src="unsplash.js"></script>
+    <script src="./owl/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
